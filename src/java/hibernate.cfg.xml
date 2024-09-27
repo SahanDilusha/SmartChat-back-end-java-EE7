@@ -8,5 +8,11 @@
         <property name="hibernate.connection.password">Sahan@200212010</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.show_sql">true</property>
+        
+        <mapping class="entity.User"/>
+        <mapping class="entity.UserStatus"/>
+        <mapping class="entity.ChatStatus"/>
+
+
     </session-factory>
 </hibernate-configuration>
