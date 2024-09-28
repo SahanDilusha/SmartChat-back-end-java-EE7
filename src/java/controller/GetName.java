@@ -22,7 +22,7 @@ public class GetName extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Gson gson = new Gson();
         JsonObject responseObject = new JsonObject();
-        responseObject.addProperty("leters", "😊");
+        responseObject.addProperty("leters", "??");
         
         try {
 
