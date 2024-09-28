@@ -56,8 +56,11 @@ public class SginIn extends HttpServlet {
                     
                 }
                 
+                session.close();
+                
             }
             
+           
             resp.setContentType("application/json");
             resp.getWriter().write(gson.toJson(responseObject));
         } catch (Exception e) {

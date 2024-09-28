@@ -87,6 +87,8 @@ public class SignUp extends HttpServlet {
                         Files.copy(avatarImage.getInputStream(), file.toPath(), StandardCopyOption.REPLACE_EXISTING);
 
                     }
+                    
+                    session.close();
 
                     responseObject.addProperty("success", true);
                     responseObject.addProperty("message", "Registration Complete");
